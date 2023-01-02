@@ -1,12 +1,18 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai'
-import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
-import {BsPersonLinesFill} from 'react-icons/bs'
-//w: with, h: height//
+import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai';
+import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
+import {BsPersonLinesFill} from 'react-icons/bs';
+
+
 const Navbar = () => {
+  const [nav, setNav] = useState(false)
+  const handleNav = () =>{
+    setNav(true)
+  }
   return (
+    // top nav bar
     <div className='fixed w-full h-20 shadow-xl z-[100]'> 
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'> 
            <Image
@@ -15,35 +21,41 @@ const Navbar = () => {
             width='125'
             height='50'
            />
-           <ul className='hidden md:flex'>
-            <Link href='/'>
-              <li className='ml-10 text-xl uppercase hover:border-b' >home</li>
-            </Link>
-            <Link href='/'>
-              <li className='ml-10 text-xl uppercase hover:border-b' >about</li>
-            </Link>
-            <Link href='/'>
-              <li className='ml-10 text-xl uppercase hover:border-b' >projects</li>
-            </Link>
-            <Link href='/'>
-              <li className='ml-10 text-xl uppercase hover:border-b' >skills</li>
-            </Link>
-            <Link href='/'>
-              <li className='ml-10 text-xl uppercase hover:border-b' >contact</li>
-            </Link>
-          </ul>
-          <div className='md:hidden'>
-            <AiOutlineMenu size={30}/>
-          </div>
+           <div>{/* different pages on the nav bar */}
+            <ul className='hidden md:flex'>
+              <Link href='/'>
+                <li className='ml-10 text-xl uppercase hover:border-b' >home</li>
+              </Link>
+              <Link href='/'>
+                <li className='ml-10 text-xl uppercase hover:border-b' >about</li>
+              </Link>
+              <Link href='/'>
+                <li className='ml-10 text-xl uppercase hover:border-b' >projects</li>
+              </Link>
+              <Link href='/'>
+                <li className='ml-10 text-xl uppercase hover:border-b' >skills</li>
+              </Link>
+              <Link href='/'>
+                <li className='ml-10 text-xl uppercase hover:border-b' >contact</li>
+              </Link>
+            </ul>
+            <div onClick={handleNav} className='md:hidden'>
+              <AiOutlineMenu size={30}/>
+            </div>
+           </div>
         </div>
 
-        <div className='fixed left-0 top-0 w-full h-screen bg-black/50'>
-          <div className='fixed left-0 top-0 w-[65%] sm:w-[50%] md:w[35%] h-screen bg-white p-10 ease-in duration-500'>
-            
+        {/* side bar */}
+        <div className={nav?'fixed left-0 top-0 w-full h-screen bg-black/50':''}>
+          <div 
+            className={
+              nav
+                ? 'fixed left-0 top-0 w-[65%] sm:w-[50%] md:w[35%] h-screen bg-white p-10 ease-in duration-500'
+                : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
             <div>
               <div className='flex w-full item-center justify-between'>
                   <Image src="/../public/assets/pfp.jpg" alt="/" width='50' height='50'/>
-                  <div className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer'>
+                  <div onClick={handleNav} className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer'>
                     <AiOutlineClose />
                   </div>
               </div>
@@ -51,7 +63,7 @@ const Navbar = () => {
                 {/* <p className='w-[85%] md:w-[80%] py-4'>short sentence</p> */}
               </div>
           </div>
-
+          {/* different pages and icons on the side bar */}
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
               <Link href='/'>
