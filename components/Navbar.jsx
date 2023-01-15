@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -7,13 +7,31 @@ import { BsPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
     // top nav bar
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100]"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src="/../public/assets/pfp.jpg"
@@ -24,23 +42,18 @@ const Navbar = () => {
         <div>
           {/* different pages on the nav bar */}
           <ul className="hidden md:flex">
-            <Link href="/">
+            <Link href="/#home">
               <li className="ml-10 text-xl uppercase hover:border-b">home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-xl uppercase hover:border-b">about</li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-xl uppercase hover:border-b">
-                projects
-              </li>
-            </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-xl uppercase hover:border-b">skills</li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="ml-10 text-xl uppercase hover:border-b">
-                contact
+                projects
               </li>
             </Link>
           </ul>
@@ -85,20 +98,25 @@ const Navbar = () => {
           {/* different pages and icons on the side bar */}
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
-                <li className="py-4 text-lg">Home</li>
+              <Link href="/#home">
+                <li onClick={() => setNav(false)} className="py-4 text-lg">
+                  Home
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-lg">About</li>
+              <Link href="/#about">
+                <li onClick={() => setNav(false)} className="py-4 text-lg">
+                  About
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-lg">Projects</li>
+              <Link href="/#skills">
+                <li onClick={() => setNav(false)} className="py-4 text-lg">
+                  Skills
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-lg">Skills</li>
-              </Link>
-              <Link href="/">
-                <li className="py-4 text-lg">Contact</li>
+              <Link href="/#projects">
+                <li onClick={() => setNav(false)} className="py-4 text-lg">
+                  Projects
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
