@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsPersonLinesFill } from "react-icons/bs";
+import { BsFileEarmarkText } from "react-icons/bs";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
@@ -144,16 +144,40 @@ const Navbar = () => {
               <div className="flex items-center justify-around my-4 w-full sm:w[80%]">
                 {/* icons */}
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <a
+                    href="https://www.linkedin.com/in/junfeng-wang-8563811b6/"
+                    target="_blank"
+                    rel=""
+                  >
+                    <FaLinkedinIn />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <a
+                    href="https://github.com/jamescodestuff"
+                    target="_blank"
+                    rel=""
+                  >
+                    <FaGithub />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
+                  <a
+                    href="mailto:wangjames797school@gmail.com"
+                    target="_blank"
+                    rel=""
+                  >
+                    <AiOutlineMail />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsPersonLinesFill />
+                  <a
+                    href="https://www.dropbox.com/s/qveqbf3leqfevek/Junfeng%20Wang%20Resume.pdf?dl=0"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BsFileEarmarkText />
+                  </a>
                 </div>
               </div>
             </div>

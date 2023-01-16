@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFileEarmarkText } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
@@ -26,16 +26,40 @@ const Main = () => {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedinIn />
+              <a
+                href="https://www.linkedin.com/in/junfeng-wang-8563811b6/"
+                target="_blank"
+                rel=""
+              >
+                <FaLinkedinIn />
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaGithub />
+              <a
+                href="https://github.com/jamescodestuff"
+                target="_blank"
+                rel=""
+              >
+                <FaGithub />
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
+              <a
+                href="mailto:wangjames797school@gmail.com"
+                target="_blank"
+                rel=""
+              >
+                <AiOutlineMail />
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsFillPersonLinesFill />
+              <a
+                href="https://www.dropbox.com/s/qveqbf3leqfevek/Junfeng%20Wang%20Resume.pdf?dl=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsFileEarmarkText />
+              </a>
             </div>
           </div>
         </div>
