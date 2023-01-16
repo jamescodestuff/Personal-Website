@@ -1,8 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import Image from "next/image";
 import portfolioImg from "../public/assets/projects/website.png";
-import Link from "next/link";
+
 
 const Projects = () => {
   return (

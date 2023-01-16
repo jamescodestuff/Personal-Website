@@ -1,7 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
@@ -11,26 +8,25 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I am</h2>
-          <p className="py-2 text-gray-600">bio</p>
+          <p className="py-2 text-gray-600"></p>
           <p className="py-2 text-gray-600">
-            Follow along as I Build a NEXT JS Portfolio Website With Tailwind
-            CSS. I wanted to update the portfolio and since I am starting to
-            learn Next JS I thought I would build the new version with Next JS
-            using Tailwind CSS for the styling. Lots of really cool features in
-            Next JS - most known for server side rending, lazy loading images,
-            and a built in routing system. We won't be utilizing server side
-            rending in this particular build, however we do incorporate lazy
-            loading images as well as the built in router.
+            My name is Junfeng Wang, but I go by James. I'm a rising senior at
+            Rutgers University, New Brunswick, pursuing a Bachelor of Science
+            degree in Computer Science with a minor in Data Science. My passion
+            for technology started when I was just a kid, looking around in my
+            parent's living room and wondering what is that black box on the
+            table, illuminating lights, and different images. I fell in love
+            with the hardware at a young age, putting pieces together in
+            different machines and eventually assembling my first computer.
           </p>
           <p className="py-2 text-gray-600">
-            (Just to be clear to take advantage of lazy loading you must use the
-            "Image" component imported from next/image. Images used as "img"
-            will not be lazy loaded. Thanks for following along! ZeroTo Mastery:
-            - Master React JS Course - https://bit.ly/Learn-React-JS - Complete
-            Web Developer in 2023 - https://bit.ly/Complete-Web-Developer...
-            Coding Challenges!
+            As I turned older and started learning my first computer science
+            class, I was immediately hooked on problem-solving. Encountering a
+            problem and breaking it down into small pieces, and tackling them
+            one by one, it's like I'm solving a puzzle. In the end, when all the
+            problems are finished, all the pieces come together, and that is an
+            incredible feeling.
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">link</p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-600 rounded-xl items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <img

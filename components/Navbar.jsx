@@ -51,12 +51,7 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/../public/assets/pfp.jpg"
-          alt="/"
-          width="125"
-          height="50"
-        />
+        <Image className="rounded-2xl" src="/../public/assets/1.jpg" alt="/" width="110" height="40" />
         <div>
           {/* different pages on the nav bar */}
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
@@ -96,8 +91,8 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full item-center justify-between">
-              <Image
-                src="/../public/assets/pfp.jpg"
+              <Image className="rounded-2xl"
+                src="/../public/assets/2.jpg"
                 alt="/"
                 width="50"
                 height="50"
