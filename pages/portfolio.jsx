@@ -27,8 +27,20 @@ const property = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>descrition of project</p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <button className="px-8 py-2 mt-4 mr-8">
+            <a href="http://localhost:3000/#home" target="_blank" rel="">
+              Project Demo
+            </a>
+          </button>
+          <button className="px-8 py-2 mt-4">
+            <a
+              href="https://github.com/jamescodestuff/Personal-Website"
+              target="_blank"
+              rel=""
+            >
+              Source Code
+            </a>
+          </button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
