@@ -1,13 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, use } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#lf2937");
+  const router = useRouter();
+  useEffect(() => {
+    if (
+      router.asPath === "/portfolio"
+      // || other project page
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
+
   const handleNav = () => {
     setNav(!nav);
   };
@@ -26,6 +43,7 @@ const Navbar = () => {
   return (
     // top nav bar
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -41,7 +59,7 @@ const Navbar = () => {
         />
         <div>
           {/* different pages on the nav bar */}
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/#home">
               <li className="ml-10 text-xl uppercase hover:border-b">home</li>
             </Link>
