@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFileEarmarkText } from "react-icons/bs";
 import { useRouter } from "next/router";
+import pfp from "../public/assets/projects/1.jpg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -53,7 +54,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           className="rounded-2xl"
-          src="/../public/assets/1.jpg"
+          src= {pfp}
           alt="/"
           width="110"
           height="40"
@@ -99,7 +100,7 @@ const Navbar = () => {
             <div className="flex w-full item-center justify-between">
               <Image
                 className="rounded-2xl"
-                src="/../public/assets/2.jpg"
+                src={pfp}
                 alt="/"
                 width="50"
                 height="50"
