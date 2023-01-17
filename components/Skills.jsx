@@ -1,5 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import javaImg from "../public/assets/java.png"
+import pythonImg from "../public/assets/python.png"
+import cImg from "../public/assets/c.png"
+import javaScriptImg from "../public/assets/javascript.png"
+import rImg from "../public/assets/r.png"
+import dartImg from "../public/assets/dart.png"
 
 function Skills() {
   return (
@@ -14,7 +20,7 @@ function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/java.png"
+                  src= {javaImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -30,7 +36,7 @@ function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/Python.png"
+                  src= {pythonImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -46,7 +52,7 @@ function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/C.png"
+                  src= {cImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -62,7 +68,7 @@ function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/javascript.png"
+                  src= {javaScriptImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -78,7 +84,7 @@ function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/r.png"
+                  src= {rImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -94,7 +100,7 @@ function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/dart.png"
+                  src = {dartImg}
                   width="64"
                   height="64"
                   alt="/"
