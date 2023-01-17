@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "Next/Link";
 
 const ProjectItem = ({ title, bgImg, tech, projectUrl }) => {
   return (

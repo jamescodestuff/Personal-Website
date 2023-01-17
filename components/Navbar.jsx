@@ -1,6 +1,6 @@
 import React, { useState, useEffect, use } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "Next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFileEarmarkText } from "react-icons/bs";
@@ -51,7 +51,13 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image className="rounded-2xl" src="/../public/assets/1.jpg" alt="/" width="110" height="40" />
+        <Image
+          className="rounded-2xl"
+          src="/../public/assets/1.jpg"
+          alt="/"
+          width="110"
+          height="40"
+        />
         <div>
           {/* different pages on the nav bar */}
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
@@ -91,7 +97,8 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full item-center justify-between">
-              <Image className="rounded-2xl"
+              <Image
+                className="rounded-2xl"
                 src="/../public/assets/2.jpg"
                 alt="/"
                 width="50"
