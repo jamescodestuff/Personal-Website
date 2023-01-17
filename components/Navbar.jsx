@@ -1,6 +1,6 @@
 import React, { useState, useEffect, use } from "react";
 import Image from "next/image";
-import Link from "Next/link";
+import Link from "Next/Link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFileEarmarkText } from "react-icons/bs";
