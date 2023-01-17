@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import javaImg from "../public/assets/java.png"
-import pythonImg from "../public/assets/python.png"
-import cImg from "../public/assets/c.png"
-import javaScriptImg from "../public/assets/javascript.png"
-import rImg from "../public/assets/r.png"
-import dartImg from "../public/assets/dart.png"
+
+import javaImg from "../public/assets/languages/java.png";
+import pythonImg from "../public/assets/languages/python.png";
+import cImg from "../public/assets/languages/c.png";
+import javaScriptImg from "../public/assets/languages/js.png";
+import rImg from "../public/assets/languages/r.png";
+import dartImg from "../public/assets/languages/dart.png";
 
 function Skills() {
   return (
