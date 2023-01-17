@@ -5,7 +5,8 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFileEarmarkText } from "react-icons/bs";
 import { useRouter } from "next/router";
-import pfp from "../public/assets/1.jpg";
+import pfp from "../public/assets/pfp.jpg";
+import navPfp from "../public/assets/navpfp.jpg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -56,8 +57,8 @@ const Navbar = () => {
           className="rounded-2xl"
           src= {pfp}
           alt="/"
-          width="110"
-          height="40"
+          width="80"
+          height="30"
         />
         <div>
           {/* different pages on the nav bar */}
