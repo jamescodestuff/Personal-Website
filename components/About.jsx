@@ -9,23 +9,37 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I am</h2>
           <p className="py-2 text-gray-600"></p>
-          <p className="py-2 text-gray-600">
-            My name is Junfeng Wang, but I go by James. I'm a rising senior at
-            Rutgers University, New Brunswick, pursuing a Bachelor of Science
+          <p className="py-2 text-xl text-gray-600">
+            My name is Junfeng, but I go by James. I'm currently a rising senior
+            at Rutgers University, New Brunswick, pursuing a Bachelor of Science
             degree in Computer Science with a minor in Data Science. My passion
-            for technology started when I was just a kid, looking around in my
-            parent's living room and wondering what is that black box on the
-            table, illuminating lights, and different images. I fell in love
-            with the hardware at a young age, putting pieces together in
-            different machines and eventually assembling my first computer.
+            for technology sparked when I was a child. From playing video games
+            to tinkering with computers, I knew from an early age that I wanted
+            to pursue a career involving technology. I was particularly
+            interested in PC building, spending hours of my free time
+            researching various computer components, watching tutorials on
+            YouTube, and learning about the different steps involved in building
+            a computer from scratch. These tutorials helped me to gain a deeper
+            understanding of the various components and how to assemble them
+            correctly. Through this process, not only did I learn about the
+            technical aspects of building a computer, but I’ve also developed a
+            strong sense of determination and problem-solving skills, breaking a
+            complex problem into small pieces, which have proven to be valuable
+            skills in my career in tech.
           </p>
-          <p className="py-2 text-gray-600">
-            As I turned older and started learning my first computer science
-            class, I was immediately hooked on problem-solving. Encountering a
-            problem and breaking it down into small pieces, and tackling them
-            one by one, it's like I'm solving a puzzle. In the end, when all the
-            problems are finished, all the pieces come together, and that is an
-            incredible feeling.
+          <p className="py-2 text-xl text-gray-600">
+            As I grew older, my passion for technology only grew stronger. I
+            kept expanding my knowledge in programming, computer systems, and
+            the latest advancements in the tech industry. I found myself
+            particularly drawn to the problem-solving aspect of computer
+            science. It was like a puzzle to me, breaking down a problem into
+            smaller pieces and tackling them one by one, much like how I would
+            assemble different computer parts. Seeing everything come together
+            in the end and work seamlessly was an incredibly satisfying feeling.
+            I am grateful for the experiences I had growing up that allowed me
+            to develop my curiosity and skills in technology. They have helped
+            shape me into who I am today, and provided a solid foundation to
+            chase my dreams in the tech industry.
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-600 rounded-xl items-center justify-center p-4 hover:scale-105 ease-in duration-300">

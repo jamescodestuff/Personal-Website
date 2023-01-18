@@ -26,9 +26,30 @@ const property = () => {
         <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
-          <p>descrition of project</p>
+          <p className="text-lg">
+            This website was developed utilizing Next.js, a React-based
+            framework, and Tailwind CSS. It comprises six pages highlighting my
+            professional skills and background. The project was constructed
+            using various tools and front-end design principles, including
+            flexbox, grid, hover effects, server-side rendering, lazy-loading
+            images, built-in client-side routing, and a mobile-responsive,
+            scalable UI that adapts to the browser window size.
+          </p>
+          <p className="text-lg py-4">
+            As I progress in my professional career, I regularly update and
+            improve this portfolio, ensuring that it accurately showcases my
+            professional development and growth over time. This includes adding
+            new projects and skills and highlighting relevant experience
+            acquired along the way. By doing so, I aim to provide a
+            comprehensive and up-to-date representation of my capabilities and
+            qualifications to potential employers and clients.
+          </p>
           <button className="px-8 py-2 mt-4 mr-8">
-            <a href="http://localhost:3000/#home" target="_blank" rel="">
+            <a
+              href="https://www.jameswangportfolio.com/"
+              target="_blank"
+              rel=""
+            >
               Project Demo
             </a>
           </button>

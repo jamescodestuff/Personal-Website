@@ -17,10 +17,14 @@ const Main = () => {
           {/* <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
             A bit about me
           </p> */}
-          <h2 className="py-4 text-gray-600 sm:max-w-[70%] m-auto">A bit about me</h2>
-          <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto font-bold">
-          I'm currently a junior at Rutgers University studying Computer Science with a minor in Data Science.
-          I will be a mobile app developer intern for Live Boston 617 during my 2023 spring semester as an co-op.
+          <h2 className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
+            A bit about me
+          </h2>
+          <p className="py-4 text-lg text-gray-600 sm:max-w-[70%] m-auto font-bold">
+            I'm currently a junior at Rutgers University studying Computer
+            Science with a minor in Data Science. I will be a mobile app
+            developer intern for Live Boston 617 during my 2023 spring semester
+            as an co-op.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
