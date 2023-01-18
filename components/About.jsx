@@ -42,7 +42,7 @@ const About = () => {
             chase my dreams in the tech industry.
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-600 rounded-xl items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="w-full h-auto m-auto shadow-xl shadow-gray-600 rounded-xl items-center justify-center p-4 hover:scale-120 ease-in duration-300">
           <img
             className="rounded-xl"
             src="https://www.usnews.com/cmsmedia/a7/b4/fc82a15549afac6b47117ceb53b1/161031-stock.jpg"
