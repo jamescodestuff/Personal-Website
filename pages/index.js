@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Welcome to My Portfolio!</title>
-        <meta name="description" content="" />
+        <title>🦊Junfeng Wang🦊</title>
+        <meta name="description" content="Welcome to my website!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
