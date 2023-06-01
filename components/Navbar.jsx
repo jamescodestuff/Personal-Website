@@ -86,13 +86,13 @@ const Navbar = () => {
       {/* side bar */}
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/50" : ""
+          nav ? "md:hidden fixed left-0 top-0 w-full min-h-screen bg-black/50" : ""
         }
       >
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[65%] sm:w-[50%] md:w[35%] h-screen bg-white p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[65%] sm:w-[50%] md:w[35%] min-h-screen bg-white p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
