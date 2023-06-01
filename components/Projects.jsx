@@ -34,12 +34,12 @@ const Projects = () => {
             tech="JavaFX"
           />
 
-          <ProjectItem
+          {/* <ProjectItem
             title="2023 Hackathon"
             bgImg={portfolioImg}
             projectUrl="/portfolio"
             tech="Next.JS"
-          />
+          /> */}
         </div>
       </div>
     </div>

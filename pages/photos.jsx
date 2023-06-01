@@ -26,8 +26,35 @@ const property = () => {
         <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
-          <p className="text-lg">chess des 1</p>
-          <p className="text-lg py-4">chess des 2</p>
+          <p className="text-lg">
+            This photo album project organizes and manages different amounts of
+            photos into other albums, involving the date and tags. Allowing
+            users to categorize pictures based on attributes like location and
+            names of people with each image supporting multiple unique tags,
+            providing a customizable approach to organizing and labeling their
+            collection. The project handles stock photos separately, stored
+            under a "stock" username, while user photos are loaded from their
+            machine, with only the location stored rather than the actual photos
+            themselves.
+          </p>
+          <p className="text-lg py-4">
+            The project includes a login system where users can log in with
+            their username and an admin subsystem for tasks such as managing
+            user accounts. Non-admin users can access features within their
+            albums. Create, delete, and rename albums, and view photos with
+            details like captions, date-time of capture, and tags. The system
+            enables adding, removing, and captioning pictures and copying and
+            moving images between albums.
+          </p>
+          <p className="text-lg py-4">
+            The application also offers to create manual slideshows and perform
+            advanced searches based on date ranges or specific tags. As well as
+            a seamless logout process, saving user updates and allowing
+            subsequent users to log in without application restart. The model
+            encompasses data objects, photo storage, and retrieval, employing
+            serialization and a well-designed object-oriented structure for
+            future extensibility.
+          </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a href="https://youtu.be/IWtmBrZlD7k" target="_blank" rel="">
               Project Demo
