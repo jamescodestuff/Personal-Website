@@ -13,12 +13,6 @@ const Projects = () => {
         </p>
         <h2 className="py-4">What I've Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem
-            title="Personal Portfolio Website"
-            bgImg={portfolioImg}
-            projectUrl="/portfolio"
-            tech="Next.JS, Tailwind"
-          />
 
           <ProjectItem
             title="Android Chess App"
@@ -35,11 +29,12 @@ const Projects = () => {
           />
 
           {/* <ProjectItem
-            title="2023 Hackathon"
+            title="foodie api"
             bgImg={portfolioImg}
             projectUrl="/portfolio"
             tech="Next.JS"
           /> */}
+          
         </div>
       </div>
     </div>

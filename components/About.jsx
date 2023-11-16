@@ -10,8 +10,8 @@ const About = () => {
           <h2 className="py-4">Who I am</h2>
           <p className="py-2 text-gray-600"></p>
           <p className="py-2 text-xl text-gray-600">
-            My name is Junfeng, but I go by James. I'm currently a rising senior
-            at Rutgers University, New Brunswick, pursuing a Bachelor of Science
+            My name is Junfeng, but I go by James. I'm currently a student at
+            Rutgers University, New Brunswick, pursuing a Bachelor of Science
             degree in Computer Science with a minor in Data Science. My passion
             for technology sparked when I was a child. From playing video games
             to tinkering with computers, I knew from an early age that I wanted

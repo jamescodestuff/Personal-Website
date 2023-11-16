@@ -8,19 +8,16 @@ const Main = () => {
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <h1 className="py-4 text-gray-700">
-            Hi, I'm <span className="text-[#5651e5]"> James</span>
-          </h1>
-          <h1 className="py-2 text-gray-700">
-            An Inspiring Computer Science Student
-          </h1>
+          <h1 className="py-4 text-gray-700">Hi, there👋🏼 </h1>
+          <h1 className="py-2 text-gray-700">Welcome to my Portfolio!</h1>
           <h2 className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
             A bit about me
           </h2>
           <p className="py-4 text-lg text-gray-600 sm:max-w-[70%] m-auto font-bold">
-            I'm a rising senior at Rutgers University studying Computer Science
-            with a minor in Data Science. Currently working at Live Boston 617
-            as a Mobile App Developer Intern.
+            My name is <span className="text-[#5651e5]"> James</span>, a
+            Passionate Computer Science Student at Rutgers
+            University - New Brunswick Studying Computer Science and Data
+            Science.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
