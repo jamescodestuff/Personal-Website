@@ -68,6 +68,11 @@ const Navbar = () => {
             <Link href="/#about">
               <li className="ml-10 text-xl uppercase hover:border-b">about</li>
             </Link>
+            <Link href="/#experience">
+              <li className="ml-10 text-xl uppercase hover:border-b">
+                experience
+              </li>
+            </Link>
             <Link href="/#skills">
               <li className="ml-10 text-xl uppercase hover:border-b">skills</li>
             </Link>
@@ -86,7 +91,9 @@ const Navbar = () => {
       {/* side bar */}
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full min-h-screen bg-black/50" : ""
+          nav
+            ? "md:hidden fixed left-0 top-0 w-full min-h-screen bg-black/50"
+            : ""
         }
       >
         <div
@@ -127,6 +134,11 @@ const Navbar = () => {
               <Link href="/#about">
                 <li onClick={() => setNav(false)} className="py-4 text-lg">
                   About
+                </li>
+              </Link>
+              <Link href="/#experience">
+                <li onClick={() => setNav(false)} className="py-4 text-lg">
+                  experiance
                 </li>
               </Link>
               <Link href="/#skills">

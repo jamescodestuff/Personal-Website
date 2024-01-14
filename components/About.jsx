@@ -1,4 +1,6 @@
 import React from "react";
+import { SectionWrapper } from "../hoc";
+
 const About = () => {
   return (
     <div id="about" className="w-full min-h-screen p-2 flex items-center py-16">
@@ -54,4 +56,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About);
