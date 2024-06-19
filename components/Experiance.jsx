@@ -19,13 +19,13 @@ const Experience = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work rounded-lg"
             contentStyle={{
-              background: "rgb(33, 150, 243)",
-              color: "#fff",
-              borderRadius: "10px", // Add rounded corners
+              background: "",
+              color: "#000000",
+              borderRadius: "10px",
               padding: "20px",
               margin: "20px",
             }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            contentArrowStyle={{ borderRight: "7px solid  #FFFFFF" }}
             date={
               <span style={{ color: "#0f0f0f", fontWeight: "bold" }}>
                 Feb 2023 - Aug 2023
@@ -58,13 +58,13 @@ const Experience = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work rounded-lg"
             contentStyle={{
-              background: "",
-              color: "#000000",
-              borderRadius: "10px",
+              background: "rgb(33, 150, 243)",
+              color: "#fff",
+              borderRadius: "10px", 
               padding: "20px",
               margin: "20px",
             }}
-            contentArrowStyle={{ borderRight: "7px solid  #FFFFFF" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
             date={
               <span style={{ color: "#0f0f0f", fontWeight: "bold" }}>
                 Sept 2023 - Present
