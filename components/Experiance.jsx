@@ -70,7 +70,7 @@ const Experience = () => {
                 Sept 2023 - Present
               </span>
             }
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={{ background: "rgb(255, 255, 255)", color: "#2196F3" }}
             icon={<MdOutlineWork />}
           >
             <h3 className="vertical-timeline-element-title text-[24px] font-bold">
